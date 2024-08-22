@@ -11,7 +11,9 @@ body {
 }
 
 a{
+    color: #E0E0E0;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover{
@@ -49,6 +51,7 @@ nav {
 .nav-bar a.bold {
     font-weight: 900;
     color: #f4f4f4;
+    text-decoration: underline;
 }
 
 .nav-bar a:hover,
@@ -225,28 +228,34 @@ ABOUT PAGE */
     margin: 0 auto;
 }
 
-
-.cv-btn{
-    padding: 10px 15px;
-    font-family: 'Merriweather', serif;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none
-    
+.about-header-title{
+    margin-bottom: 30px;
+    font-size: 40px;
 }
 
+.cv-btn{
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background: linear-gradient(black, black) padding-box, 
+    linear-gradient(45deg, #1746c7, #0077b6, #00b4d8, #90e0ef, #caf0f8) border-box;
+}
 
 .cv-btn:hover,
 .cv-btn:active{
-    background: #ADADAD;
     cursor: pointer;
-    text-decoration: underline;
-
+    background: linear-gradient(45deg, #1746c7, #0077b6, #00b4d8, #90e0ef, #caf0f8) padding-box;
+    color: black
 }
 
-
-
-
+.about-header-para{
+    margin: 0;
+    padding: 0;
+}
 
 
 
