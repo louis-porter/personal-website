@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../index.css">
     <title>Louis Porter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,10 @@
 <body>
     <nav>
         <div class="nav-bar">
-            <a href="#" class="bold" id="selected-page">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
+            <a href="index.html" class="bold" id="selected-page">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
         </div>
     </nav>
     <header>
@@ -26,28 +27,42 @@
         </div>
         <div>
             <div class="profile-img-container">
-                <img class="profile-img" src="./images/headshot.jpeg" alt="smiling picture of me">
+                <img class="profile-img" src="../images/headshot.jpeg" alt="smiling picture of me">
             </div>
             <div class="social-buttons-container">
-                <!-- <button class="header-btn">Download CV</button>
-                <a href="https://github.com/lsp2610" target="_blank" class="header-btn">GitHub</a>
-                <a class="header-btn">LinkedIn</a> -->
                 <a href="#" class="social-button github" target="_blank" aria-label="GitHub">
-                    <img src="images/github.png" alt="GitHub Logo">
+                    <img src="../images/github.png" alt="GitHub Logo">
                 </a>
                 <a href="#" class="social-button linkedin" target="_blank" aria-label="LinkedIn">
-                    <img src="images/linkedin.jpeg" alt="LinkedIn Logo">
+                    <img src="../images/linkedin.jpeg" alt="LinkedIn Logo">
                 </a>
             </div>
         </div>
     </header>
 
     <main>
-        <p>MAIN.</p>
+        <div class="featured-post-container">
+            <h2>Featured Posts</h2>
+            <div class="featured-post-wrapper">
+                <div class="featured-post">
+                    <h4>Post #1</h4>
+                </div>
+                <div class="featured-post">
+                    <h4>Post #2</h4>
+                </div>
+                <div class="featured-post">
+                    <h4>Post #3</h4>
+                </div>
+            </div>
+            <div class="posts-link-container">
+                <a class="posts-link" href="#">View all posts →</a>
+            </div>
+        </div>
+        
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Louis Porter. All rights reserved.</p>
     </footer>
     <script src="index.js"></script>
 </body>
