@@ -5,9 +5,21 @@ body {
     /* background-color: #f4f4f4;
     color: #333; */
     background: black;
-    color: #f4f4f4;
+    color: #E0E0E0;
 
     max-width: 1200px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    color: #CCCCCC;
 }
 
 
@@ -15,7 +27,7 @@ body {
 
 nav {
     padding: 0;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 60px 0;
 }
 
 .nav-bar {
@@ -23,12 +35,11 @@ nav {
     justify-content: center;
     padding: 0;
     margin: 0;
-    gap: 30px;
+    gap: 5%;
 }
 
 .nav-bar a {
     color: #f4f4f4;
-    text-decoration: none;
     padding: 5px 0;
     font-weight: 300;
     border-radius: 5px;
@@ -49,7 +60,6 @@ nav {
 /* HEADER */
 
 header {
-    margin-top: 60px;
     text-align: center;
     
 }
@@ -121,21 +131,21 @@ header {
 
 /* FEATURED POSTS */
 
-.featured-post-container{
+.featured-project-container{
     margin: 60px auto 0 auto;
     width: 90%;
 }
 
-.featured-post-wrapper{
+.featured-project-wrapper{
     padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px
+    gap: 15px
 }
 
-.featured-post{
+.featured-project{
     width: 90%;
     border-radius: 5px;
     border: 2px solid transparent;
@@ -143,16 +153,52 @@ header {
     linear-gradient(45deg, #ffbd00, #ff5400, #ff0054, #9e0059, #390099) border-box;
 }
 
-.featured-post h4{
+.featured-project:hover{
+    cursor: pointer;
+}
+
+.featured-project h4{
     padding-left: 10px
 }
+
+.projects-link-container{
+    padding-top: 20px;
+}
+
+.projects-link{
+    color: whitesmoke
+}
+
+.projects-link:hover{
+    color: #ADADAD
+}
+
+
+/* LATEST POSTS */
+
+.latest-posts-container {
+    margin: 60px auto 0 auto;
+    width: 90%;
+}
+
+.post-link{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.latest-post a:hover{
+    color: #ADADAD
+}
+
+
 
 .posts-link-container{
     padding-top: 20px;
 }
 
 .posts-link{
-    color: whitesmoke
+    color: whitesmoke;
+    font-weight: normal;
 }
 
 .posts-link:hover{
@@ -161,17 +207,42 @@ header {
 
 
 
-
 /* FOOTER */
 
 footer{
+    padding-left: 20px;
     margin-top: 100px;
 }
 
 
 
+/* 
+ABOUT PAGE */
 
 
+.about-container{
+    width:90%;
+    margin: 0 auto;
+}
+
+
+.cv-btn{
+    padding: 10px 15px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none
+    
+}
+
+
+.cv-btn:hover,
+.cv-btn:active{
+    background: #ADADAD;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
 
 
 
@@ -221,22 +292,37 @@ footer{
         max-width: 60%;
     }
 
-    .featured-post-container{
+    .featured-project-container{
         width: 100%;
     }
 
-    .featured-post-wrapper{
+    .featured-project-wrapper{
         padding: 5px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
     }
 
-    .featured-post{
+    .featured-project{
         width: 30%;
         height: 45%;
 
     }
+
+    .latest-posts-container {
+        width: 100%;
+    }
+
+    footer{
+        padding-left: 0;
+    }
+
+    .about-container{
+        width: 100%
+    }
+
+
+
 
 
 
